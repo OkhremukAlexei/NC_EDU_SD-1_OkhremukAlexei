@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RentCars</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/Main.css">
+
+
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">RenTCars</a>
+          </div>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#searching">Search Cars</a></li>
+                  <li><a href="#">Log-in</a></li>
+                  <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div id="headerwrap">
+      <div class="container">
+          <div class="row centered">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h1>Rent Cars</h1>
+                  <h2>Best cars in the Belarus!</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="carousel-cars" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testCarousel" data-slide-to="1"></li>
+          <li data-target="#testCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src="bmw_x7.jpg" alt="...">
+          </div>
+          <div class="item">
+              <img src="ferrari.jpg" alt="...">
+          </div>
+          <div class="item">
+              <img src="mitsubishi.jpg" alt="...">
+          </div>
+      </div>
+
+      <a class="left carousel-control" href="#carousel-cars" role="button" data-slide="prev">
+          <i class="fas fa-arrow-left glyphicon-chevron-left"></i>
+      </a>
+      <a class="right carousel-control" href="#carousel-cars" role="button" data-slide="next">
+          <i class="fas fa-arrow-right glyphicon-chevron-right"></i>
+      </a>
+  </div>
+  <div id="searching" class="v-padding">
+      <div class="row">
+          <div class="form-search col-lg-4 col-lg-offset-1 centered">
+              <form>
+                  <div class="form-row">
+                      <div class="form-group col-md-12">
+                          <label for="search">Search cars</label>
+                          <input type="search" class="form-control" id="search" placeholder="Select the city or airport">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                              Return to a different place
+                          </label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="form-group col-md-6">
+                          <input type="date" class="form-control" id="begin_date" placeholder="dd-mm-yy">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <input type="time" class="form-control" id="begin_time">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="form-group col-md-6">
+                          <input type="date" class="form-control" id="end_date" placeholder="dd-mm-yy">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <input type="time" class="form-control" id="end_time">
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Search cars</button>
+              </form>
+          </div>
+          <div class="form-filter col-lg-4 col-lg-offset-1">
+            <div class="filter-header centered">
+                <h2>Filter</h2>
+            </div>
+
+            <h3>
+                Mileage
+                <button class="btn-link" type="button" data-toggle="collapse" data-target="#mileage" aria-expanded="false" aria-controls="mileage">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </h3>
+            <div id="mileage" class="collapse multi-collapse">
+                <div class="custom-control custom-checkbox" >
+                    <input type="checkbox" class="custom-control-input" id="limited_mileage">
+                    <label class="custom-control-label" for="limited_mileage">Limited</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="unlimited_mileage">
+                    <label class="custom-control-label" for="unlimited_mileage">Unlimited</label>
+                </div>
+            </div>
+
+            <h3>
+                Transmission
+                <button class="btn-link" type="button" data-toggle="collapse" data-target="#transmission" aria-expanded="false" aria-controls="transmission">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </h3>
+            <div id="transmission" class="collapse multi-collapse">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="auto_transmission">
+                    <label class="custom-control-label" for="auto_transmission">Automatic</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="mech_transmission">
+                    <label class="custom-control-label" for="mech_transmission">Mechanical</label>
+                </div>
+            </div>
+            <h3>
+                Supplier
+                <button class="btn-link" type="button" data-toggle="collapse" data-target="#supplier" aria-expanded="true" aria-controls="supplier">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </h3>
+            <div id="supplier" class="collapse multi-collapse">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Avis">
+                    <label class="custom-control-label" for="Avis">Avis</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Budget">
+                    <label class="custom-control-label" for="Budget">Budget</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Europcar">
+                    <label class="custom-control-label" for="Europcar">Europcar</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Sixit">
+                    <label class="custom-control-label" for="Sixit">Sixit</label>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div id="dg">
+      <div class="container">
+          <div class="row centered">
+              <h4></h4>
+              <div class="col-lg-4">
+
+              </div>
+              <div class="col-lg-4">
+
+              </div>
+              <div class="col-lg-4">
+
+              </div>
+          </div>
+      </div>
+      <div class="container wb">
+          <div class="row centered">
+
+          </div>
+          <div class="col-lg8 col-lg-offset-2">
+
+          </div>
+      </div>
+  </div>
+  <div id="footer">
+      <div class="container">
+          <div class="row centered">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

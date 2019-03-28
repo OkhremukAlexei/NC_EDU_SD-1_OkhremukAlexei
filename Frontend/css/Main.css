@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+body {
+    background-color: rgba(255, 141, 101, 0.2);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #555;
+}
+h1, h2, h3, h4{
+    font-family: "Raleway", sans-serif;
+    color: #333;
+}
+p{
+    line-height: 7vh;
+}
+.centered{
+    text-align: center;
+}
+a{
+    color: #5e7f83;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+a:hover{
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
+}
+.item > img{
+    width: 100%;
+}
+.navbar{
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-inverse{
+    background: rgba(255,141,101,0.55);
+    border-color: rgba(128,65,56,0.78);
+}
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: rgba(123,20,33,0.73);
+}
+.navbar-inverse .navbar-brand{
+    font-weight: bolder;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+#headerwrap{
+    text-align: center;
+    background: revert center center;
+    width: 100%;
+    background-size: 100%;
+}
+#headerwrap h1{
+    margin-top: 100px;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+#headerwrap h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.form-search{
+    box-shadow: 2px 2px 5px 5px  rgba(78, 78, 78, 0.3);
+    background-color: rgba(94, 127, 131, 0.15);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.filter-header{
+    padding-top: 1px;
+    background-color: rgba(249, 254, 255, 0.84);
+    border-bottom: 1px solid #171a1d;
+    border-left: 1px solid #171a1d;
+    border-right: 1px solid #171a1d;
+}
+.form-filter{
+    box-shadow: 2px 2px 5px 5px  rgba(78, 78, 78, 0.3);
+    background-color: rgba(249, 254, 255, 0.55);
+}
+.v-padding{
+    padding-top: 100px;
+}
+.img-fluid{
+    height: 40vh;
+    max-width: 100%;
+}
+#dg{
+    background: #0f6674;
+    margin-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px
+}
+
+.tilt{
+    transition: aal 0.5s ease;
+}
+.tilt:hover{
+    transform: rotate(-10deg);
+}
+#footer{
+    background: rgba(83,114,118,0.75);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#footer i{
+    color: #0f6674;
+    font-size: 40px;
+    padding: 20px;
+}
+#footer i:hover{
+    color: #0c5460;
+}
