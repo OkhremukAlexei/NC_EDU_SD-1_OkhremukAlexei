@@ -2,12 +2,13 @@ package com.edu.service;
 
 import com.edu.entity.User;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
-    ArrayList<User> findAll();
-    Optional<User> findById(int id);
+    Iterable<User> findAll();
+    Optional<User> findById(int idUser);
     User save(User user);
-    void delete(User user);
+    List<User> findUsersByRole(String userRole);
+    void delete(int idUser);
 }
